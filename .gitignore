@@ -4,5 +4,8 @@
 # Build
 build/macos/build
 bin
+evertims/build
+libevert/build
 
-# XCode
+# Swift
+.swiftpm/
