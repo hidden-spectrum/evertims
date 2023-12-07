@@ -12,19 +12,19 @@ let package = Package(
             targets: ["evertims"]
         ),
         .library(
-            name: "EVERTims",
-            targets: ["EVERTims"]
+            name: "EvertIMS",
+            targets: ["EvertIMS"]
         ),
         .library(
-            name: "libevert",
-            targets: ["libevert"]
+            name: "Evert",
+            targets: ["Evert"]
         )
     ],
     
     targets: [
         .executableTarget(
             name: "evertims",
-            dependencies: ["EVERTims"],
+            dependencies: ["EvertIMS"],
             path: "evertims/src",
             sources: ["main.cc"],
             cSettings: [
@@ -36,9 +36,9 @@ let package = Package(
             ]
         ),
         .target(
-            name: "EVERTims",
+            name: "EvertIMS",
             dependencies: [
-                "libevert",
+                "Evert",
                 "OSC"
             ],
             path: "evertims/src",
@@ -64,7 +64,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "libevert",
+            name: "Evert",
             path: "libevert/src",
             sources: [
                 "elBeam.cc",
