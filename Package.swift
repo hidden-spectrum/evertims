@@ -14,6 +14,10 @@ let package = Package(
         .library(
             name: "EVERTims",
             targets: ["EVERTims"]
+        ),
+        .library(
+            name: "libevert",
+            targets: ["libevert"]
         )
     ],
     
@@ -53,10 +57,9 @@ let package = Package(
         ),
         .target(
             name: "OSC",
-            path: "evertims/src/OSC",
+            path: "osc/src",
             publicHeadersPath: ".",
             cSettings: [
-                .define("__Darwin"),
                 .unsafeFlags(["-w"])
             ]
         ),

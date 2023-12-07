@@ -1,9 +1,6 @@
 #ifndef __OSC_CLIENT_H
 #define __OSC_CLIENT_H
 
-#if defined __cplusplus
-extern "C" {
-#endif
 
 /*
 Written by Matt Wright, The Center for New Music and Audio Technologies,
@@ -185,9 +182,5 @@ extern char *OSC_errorMessage;
    string?  The length of the string, plus the null char, plus any padding
    needed for 4-byte alignment. */ 
 int OSC_effectiveStringLength(char *string);
-
-#if defined __cplusplus
-}
-#endif
 
 #endif
